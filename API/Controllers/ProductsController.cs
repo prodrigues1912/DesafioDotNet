@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -9,29 +11,29 @@ namespace API.Controllers
 {
     public class ProductsController : ApiController
     {
-        // GET api/values
+        // GET /api/v1/products Retorna todos os produtos em lista
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
-        // GET api/values/5
+        // GET /api/v1/products/:productId Retorna apenas o produto do productId
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST api/values
+        // POST /api/v1/products Salva o produto e retorna ele
         public void Post([FromBody] string value)
         {
         }
 
-        // PUT api/values/5
+        // PUT /api/v1/products/:productId Modifica o produto e retorna o novo produto
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE api/values/5
+        // DELETE /api/v1/products/:productId Deleta o produto
         public void Delete(int id)
         {
         }
