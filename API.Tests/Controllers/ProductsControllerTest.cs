@@ -11,7 +11,7 @@ using System.Web.Http;
 namespace API.Tests.Controllers
 {
     [TestClass]
-    public class ValuesControllerTest
+    public class ProductsControllerTest
     {
         [TestMethod]
         public void Get()
